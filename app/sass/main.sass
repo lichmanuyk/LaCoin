@@ -1,0 +1,588 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+	a
+		color: $text
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+.header
+	position: relative	
+	background-image: url(../img/bg-1.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: bottom center
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	font-family: "OpenSans", sans-serif
+	font-weight: 700
+
+	/* Particles */
+	canvas 
+	  display: block
+	  vertical-align: bottom
+
+	#particles-js 
+		position: absolute	
+		top: 0	
+		left: 0	
+		right: 0	
+		bottom: 0	
+	  width: 100%
+	  background-image: url('')
+	  background-size: cover
+	  background-position: 50% 50%
+	  background-repeat: no-repeat
+
+
+	.menu
+		position: absolute
+		width: 100%
+		min-height: 80px
+		transition: 0.5s
+		background-color: rgba(0, 0, 0, 0.3)
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		z-index: 	3
+		
+		.head-menu
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			width: 100%	
+			.sandwich
+				flex: 1
+				.menu-btn
+					position: relative
+					display: block
+					width: 45px
+					height: 45px
+					border-radius: 50%
+					border: 2px solid #0470b8
+					transition: 0.3s
+					span
+						position: absolute
+						top: 50%
+						left: 50%
+						margin-top: -1px
+						margin-left: -10px
+						width: 20px
+						height: 2px
+						background-color: #0470b8
+						&::before, &::after
+							content: ''
+							position: absolute
+							top: 50%
+							left: 50%
+							margin-top: -1px
+							margin-left: -10px
+							width: 20px
+							height: 2px
+							background-color: #0470b8
+							transition: 0.2s
+						&::before
+							transform: translateY(-7px)
+						&::after
+							transform: translateY(7px)
+				.menu-btn-active
+					border: 2px solid #e71f7a
+					span
+						height: 0
+						background-color: #e71f7a
+						&::before
+							background-color: #e71f7a
+							transform: rotate(-45deg)
+						&::after
+							background-color: #e71f7a
+							transform: rotate(45deg)
+							
+
+			.logo 
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex	
+				flex: 1
+				a
+					margin: 0 auto
+					cursor: default
+
+			.head-icons
+				transition: 0.5s
+				flex: 2
+				margin-top: 6px	
+				a
+					transition: all 0.3s ease
+					&:hover
+						color: #0470b8
+					i
+						padding-right: 10px
+					.no-pad
+						padding-right: 0	
+			.head-links
+				transition: 0.5s
+				font-family: 	"OpenSans", sans-serif
+				text-transform: uppercase	
+				font-weight: 700	
+				font-size: 16px	
+				flex: 2
+				text-align: right	
+				a
+					margin-left: 	32px
+					transition: all 0.3s ease
+					&:first-child
+						margin-left: 0	
+					&:hover
+						text-decoration: 	none
+						color: #0470b8
+				.accent-text-hover
+					margin-left: 15px
+					padding: 10px 10px 10px 10px	
+					&:hover
+						color: #e71f7a
+						background-color: #e71f7a
+						border-radius: 5px
+						color: #fff
+
+
+	.header-content
+		flex: 1
+		position: relative
+		width: 100%	
+		padding-top: 160px	
+		h1
+			text-transform: uppercase	
+			font-size: 200px	
+			margin: 0
+			padding: 0	
+			cursor: default	
+			transition: 0.5s
+		h2
+			margin-top: -55px
+			font-size: 48px
+			cursor: default
+			transition: 0.5s
+		.header-button
+			text-transform: uppercase
+			transition: .2s
+			background-color: #e71f7a
+			border-radius: 15px
+			font-size: 16px
+			text-align: center
+			padding: 20px 100px 20px 100px
+			margin-top: 55px
+			margin-bottom: 158px
+			&:hover
+				text-decoration: none
+				color: #fff
+				background-color: #bc1863
+
+
+
+
+.anim1
+	margin-top: 50px!important
+	opacity: 1!important
+.anim2
+	margin-top: 20px!important
+	opacity: 1!important
+
+
+.opac
+	opacity: 0.5
+
+.sec-2
+	min-height: 140px
+	background-color: #0470b8
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	padding-bottom: 30px
+	a
+		img
+			margin: 30px
+			margin-bottom: 0
+
+
+
+
+
+
+
+
+
+.sec-3
+	font-family: "Open Sans", sans-serif
+	font-weight: 700
+	cursor: default
+	padding: 0 20px 0 20px
+	h2
+		font-size: 48px
+		color: #e71f7a
+		font-weight: 700
+		margin-top: 20px
+		margin-bottom: 4px
+	.s3-1
+		background-color: #0470b8
+		padding: 7px 8px 7px 8px
+		font-size: 18px
+		margin-bottom: 14px
+		span
+			font-weight: 400
+	.s3-2
+		color: #3e3e3e
+		text-transform: uppercase
+		font-size: 30px
+		margin-bottom: -7px
+	.s3-3
+		color: #3e3e3e
+		text-transform: uppercase
+		font-size: 24px
+		margin-bottom: 0
+	.s3-4
+		color: #0470b8
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: 400
+		margin-bottom: 50px
+	.graph
+		position: relative
+		.line
+			margin-top: 38px
+			margin-bottom: 110px
+			width: 100%
+			height: 10px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex	
+			.pink
+				border-radius: 5px 0 0 5px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex: 1
+				background-image: linear-gradient(to right, #ebc5d6 0%, #e71f7a 100%)
+			.blue
+				border-radius: 0 5px 5px 0
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex: 3
+				background-color: #0470b8
+	.vert-line
+		&::before
+			content: ''
+			top: -9px
+			left: 57%
+			position: absolute
+			display: block
+			width: 1px
+			height: 65px
+			background-color: #e71f7a
+		&::after
+			content: ''
+			top: -9px
+			right: 0.6%
+			position: absolute
+			display: block
+			width: 1px
+			height: 65px
+			background-color: #e71f7a
+	.graph-text
+		font-family: "OpenSans", sans-serif
+		font-weight: 400
+		font-size: 16px
+		color: #e71f7a
+		text-transform: uppercase
+		line-height: 16px
+		.gr-txt-1
+			position: absolute
+			top: -40px
+			right: 43%
+		.gr-txt-2
+			position: absolute
+			top: -40px
+			right: 0.5%
+		.gr-txt-3
+			position: absolute
+			top: 40px
+			right: 43.5%
+		.gr-txt-4
+			position: absolute
+			top: 40px
+			right: 1%
+	.point
+		position: absolute
+		width: 40px
+		height: 40px
+		border-radius: 50% 
+		top: 46%
+		left: 25%
+		transform: translate(-50%, -50%)
+		background-color: #e71f7a
+		animation: pulse 2s infinite
+		box-shadow: 0 0 15px 10px rgba(231, 31, 122, 0.61)
+		&::before
+			content: ''
+			position: absolute
+			display: block
+			top: 20px
+			left: 20px
+			width: 20px
+			height: 20px
+			background-color: #fff
+			border-radius: 50%
+			transform: translate(-50%, -50%)
+			animation: pulse2 2s infinite
+	.s3-5, .s3-6
+		color: #3e3e3e
+		font-size: 24px
+		span
+			color: #0470b8
+	.s3-5
+		margin-bottom: 0
+	.s3-6
+		margin-bottom: 52px
+	.s3-button
+			text-transform: uppercase
+			background-color: #e71f7a
+			border-radius: 15px
+			font-size: 16px
+			text-align: center
+			transition: .2s
+			padding: 20px 100px 20px 100px
+			margin-bottom: 20px
+			&:hover
+				text-decoration: none
+				color: #fff
+				background-color: #bc1863
+	.s3-7
+		color: #e71f7a
+		font-size: 16px
+		font-weight: 400
+		margin-bottom: 45px
+@-webkit-keyframes pulse
+  0%
+    -webkit-box-shadow: 0 0 15px 10px rgba(231, 31, 122, 0.61)
+
+  14%
+    -webkit-box-shadow: 0 0 9px 12px rgba(231, 31, 122, 0.6)
+
+  60%
+    -webkit-box-shadow: 0 0 15px 10px rgba(231, 31, 122, 0.61)
+
+  100%
+    -webkit-box-shadow: 0 0 15px 10px rgba(231, 31, 122, 0.61)
+
+@keyframes pulse
+  0%
+    -moz-box-shadow: 0 0 15px 10px rgba(231, 31, 122, 0.61)
+    box-shadow: 0 0 15px 10px rgba(231, 31, 122, 0.61)
+
+  14%
+    -moz-box-shadow: 0 0 9px 12px rgba(231, 31, 122, 0.6)
+    box-shadow: 0 0 9px 12px rgba(231, 31, 122, 0.6)
+
+  60%
+    -moz-box-shadow: 0 0 15px 10px rgba(231, 31, 122, 0.61)
+    box-shadow: 0 0 15px 10px rgba(231, 31, 122, 0.61)
+  100%
+    -moz-box-shadow: 0 0 15px 10px rgba(231, 31, 122, 0.61)
+    box-shadow: 0 0 15px 10px rgba(231, 31, 122, 0.61)
+@-webkit-keyframes pulse-m
+  0%
+    -webkit-box-shadow: 0 0 10px 5px rgba(231, 31, 122, 0.61)
+
+  14%
+    -webkit-box-shadow: 0 0 9px 8px rgba(231, 31, 122, 0.6)
+
+  60%
+    -webkit-box-shadow: 0 0 10px 5px rgba(231, 31, 122, 0.61)
+
+  100%
+    -webkit-box-shadow: 0 0 10px 5px rgba(231, 31, 122, 0.61)
+
+@keyframes pulse-m
+  0%
+    -moz-box-shadow: 0 0 10px 5px rgba(231, 31, 122, 0.61)
+    box-shadow: 0 0 10px 5px rgba(231, 31, 122, 0.61)
+
+  14%
+    -moz-box-shadow: 0 0 9px 8px rgba(231, 31, 122, 0.6)
+    box-shadow: 0 0 9px 8px rgba(231, 31, 122, 0.6)
+
+  60%
+    -moz-box-shadow: 0 0 10px 5px rgba(231, 31, 122, 0.61)
+    box-shadow: 0 0 10px 5px rgba(231, 31, 122, 0.61)
+  100%
+    -moz-box-shadow: 0 0 10px 5px rgba(231, 31, 122, 0.61)
+    box-shadow: 0 0 10px 5px rgba(231, 31, 122, 0.61)
+
+@keyframes pulse2
+	0%
+		width: 20px
+		height: 20px
+	10%
+		width: 23px
+		height: 23px
+	40%
+		width: 20px
+		height: 20px
+	100%
+		width: 20px
+		height: 20px
+@keyframes pulse3
+	0%
+		width: 13px
+		height: 13px
+	10%
+		width: 18px
+		height: 18px
+	40%
+		width: 13px
+		height: 13px
+	100%
+		width: 13px
+		height: 13px
+
+
+
+
+
+
+
+.sec-4
+	background-image: url(../img/bg-2.jpg)
+	background-repeat: no-repeat
+	background-position: bottom right
+	background-size: cover
+	font-family: "OpenSans", sans-serif
+	font-weight: 400
+	padding: 0px 20px 0 20px
+	img
+		margin-top: 7px
+	h2
+		margin-top: 60px
+		font-weight: 700
+		font-size: 24px
+		margin-bottom: 20px
+		line-height: 32px
+	p
+		font-size: 16px
+		letter-spacing: 0.16px
+		line-height: 27px
+		margin-bottom: 28px
+	.s4-button
+			text-transform: uppercase
+			background-color: #e71f7a
+			border-radius: 15px
+			font-size: 16px
+			transition: .2s
+			text-align: center
+			padding: 20px 100px 20px 100px
+			margin-bottom: 178px
+			&:hover
+				text-decoration: none
+				color: #fff
+				background-color: #bc1863
+  
+
+
+
+
+
+
+
+.sec-5
+	position: relative
+	background-color: #0470b8
+	font-family: "Open Sans", sans-serif
+	font-weight: 700
+	font-size: 18px
+	padding-top: 75px
+	#carouselExampleSlidesOnly
+		cursor: default
+		.carousel-inner
+			.slide
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				margin-bottom: 70px
+				margin-left: 15px
+				margin-right: 5px
+				width: 620px
+				img
+					width: 50px
+					height: 50px
+				p
+					margin-left: 20px
+					letter-spacing: 0.18px
+					line-height: 24px
+					margin-bottom: 0
+	.carousel-indicators
+		cursor: pointer
+		li
+			width: 12px
+			height: 12px
+			border-radius: 50%
+			border: 1px solid #fff
+			background-color: transparent
+			&.active
+				background-color: #fff
+
+
+@import "media" // Always at the end
